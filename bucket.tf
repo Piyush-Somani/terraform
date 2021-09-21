@@ -1,5 +1,11 @@
+provider "google" {
+ # credentials = ""         # Service Account Credentials
+  project = "poised-vial-319809"                            # Project Name
+  region  = "us-central1"                             # Region
+  #zone    = "${var.zone}"                               # Zone
+}
 # Create Bucket
-resource "google_storage_bucket" "auto-expire" {
+resource "google_storage_bucket" "autoexpire" {
   name          = "piyush79727023"
   location      = "us-central1-c"
   force_destroy = true
