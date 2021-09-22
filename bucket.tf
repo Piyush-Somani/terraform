@@ -5,9 +5,9 @@ provider "google" {
   #zone    = "${var.zone}"                               # Zone
 }
 # Create Bucket
-resource "google_storage_bucket" "autoexpire" {
+resource "google_storage_bucket" "autoexpire-ps97" {
   name          = "piyush79727023"
-  location      = "us-central1-c"
+  # location      = "us-central1-c"
   force_destroy = true
 
   
