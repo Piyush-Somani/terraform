@@ -1,7 +1,7 @@
 provider "google" {
   project = "poised-vial-319809"
   region  = "us-central1"
-  zone    = "us-central1-c"
+  zone    = "us-central1-a"
 }
 
 resource "google_compute_instance" "resource_name" {
