@@ -1,9 +1,9 @@
-#provider "google" {
+provider "google" {
  # credentials = ""         # Service Account Credentials
- # project = "poised-vial-319809"                            # Project Name
-  #region  = "us-central1"                             # Region
+  project = "poised-vial-319809"                            # Project Name
+  region  = "us-central1"                             # Region
   #zone    = "${var.zone}"                               # Zone
-#}
+}
 # Create Bucket
 resource "google_storage_bucket" "autoexpire-ps97" {
   name          = "piyush79727023"
